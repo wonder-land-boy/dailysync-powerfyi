@@ -1,4 +1,4 @@
-name: Sync-Garmi- Global-to-Garmin-CN-JohnDoe
+name: Sync-Garmi- Global-to-Garmin-CN-Uyi
 
 on:
   workflow_dispatch:
