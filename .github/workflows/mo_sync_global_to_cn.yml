@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     #  每6小时检查一次
-    - cron: "0 */6 * * *"
+    - cron: "0 */1 * * *"
 
 env:
   # please change to your own config.
@@ -35,6 +35,7 @@ jobs:
       - run: yarn
       - run: yarn sync_global
         timeout-minutes: 5
+      - run: git pull
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Save Garmin Session
